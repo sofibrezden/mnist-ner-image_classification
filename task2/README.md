@@ -74,11 +74,15 @@ comprehensive solution for multi-modal animal detection.
 ├── dataset-for-testing-pipeline/    # Test dataset for verifying the pipeline  
 ├── image_classifier/                # Directory for image classification models  
 │   ├── data/                        # Data for training the classification model  
-│   ├── models/                      # Code for training and inference of the classification model  
-│   │   ├── __init__.py  
-│   │   ├── eda.ipynb                 # Exploratory Data Analysis (EDA) for image classification  
-│   │   ├── img_inference.py          # Script for running inference on the image classifier  
-│   │   ├── img_training.py           # Script for training the image classification model  
+│   │   ├── animals/                 # Folder containing animal-related photos  
+│   │   │   ├── names.txt            # Text file with names of animals  
+│   ├── models/                      # Directory for storing trained models  
+│   │   ├── animal_classifier.h5     # Trained model in HDF5 format  
+│   │   ├── label_encoder.npy        # Encoded labels for classification  
+│   ├── __init__.py                  # Init file for the module  
+│   ├── eda.ipynb                    # Notebook for Exploratory Data Analysis (EDA)  
+│   ├── img_inference.py             # Script for running inference on the image classifier  
+│   ├── img_training.py              # Script for training the image classification model  
 ├── ner/                              # Directory for the NER model  
 │   ├── data/                         # Data for training the NER model  
 │   │   ├── __init__.py  
